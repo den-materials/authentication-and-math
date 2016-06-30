@@ -3,6 +3,10 @@
 
 ### Objectives:
 
+* Understand the basic math concepts behind modular arithmetic
+* Apply this concept to server authentication
+* Warm up your brains, have fun (with MATH!) and eat candy
+
 #### Warm-up:  The Russian Postal Problem (5-10 minutes)
 Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
 
