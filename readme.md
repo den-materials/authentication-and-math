@@ -104,6 +104,7 @@ primitive <br >root | exponent | value | mod 17 | mod 7
 3 | 19 | 1,162,261,467 | 10 | **3**
 
 This can also be illustrated with a clock:
+
 ![](mod17.png)
 
 For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) You can easily see how <code>3^3 mod 17 &equiv; 10</code>
