@@ -1,7 +1,14 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> An Intro to Auth and Modular Arithmetic
 
-#### Warm-up:  Auth
+
+### Objectives:
+
+#### Warm-up:  The Russian Postal Problem (5-10 minutes)
 Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
+
+#### Video: How does this relate to computer passwords? [Video](http://www.wimp.com/how-encryption-works-in-your-web-browser/)
+
+#### Activity: Candy from a Lockbox (20 minutes)
 
 In our version of the story, Alice (played by a student) has a bunch of candy. Bob (played by a different student) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination, say 240. Alice has another lock with a given combination, say 512. (Alice does not know Bob's combo, and vice-versa.)
 
@@ -15,40 +22,13 @@ Alice will be able to unlock the box, put in the candy and then return it to Bob
 
 Whatever happens in class, unlock the box and share the candy.
 
-#### Eat Candy and Discuss:
+#### Discussion:  How are these things related? (10 minutes)
 
 * Did the class figure it out? Did they get close?
 * How would we change the math to make this more realistic?
 * What is modular math and how does it work?
 * How does bcrypt use modular math?
 
-[Here is a good explanation](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 
-13/5 = 2 R 3
-
-13 mod 5= 3
-
-* Applied to our story:
-
-If the passwords are 256 and 326:
-
-256 / 7 = 36 R 4; *256 mod 7 = 4*
-
-326 / 7 = 46 R 4; *326 mod 7 = 4*
-
-We can use the formula *x mod 7 = 4* where x is determined by another simple algorithm. For example, x = combo * 5. Bob would send a public key of 1280 (which is 256 * 5) and Alice would return a public key of 1630 (which is 326 * 5).
-
-If the passwords are 243 and 733:
-
-3^5 = 243 / 7 = 34 R 5
-
-3^6 = 729 / 7 = 104 R 1
-
-3^6 = 729
-
-729 + 4 =  733 
-
-733 / 7 = 104 R 5
-
-Now the algorithm is *3^n mod 7 = 5*. Alice could send the secret key of 5. Bob could return the secret key of 6. We know we must adjust 729 to 733 in order to get the proper remainder.
-
+#### More Math (time permitting)
+[Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
