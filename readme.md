@@ -33,9 +33,8 @@ Suppose too that Bob chose `8` as his random number. He would perform the equati
 
 Now Alice can start with Bob's public key (16) and raise to the exponent of her secret key:
 <code>16^6 mod 17 &equiv; 1</code>
-
 Bob does the same by raising Alice's public key by *his* secret:
-`15^8 mod 17` &equiv; `1`
+<code>15^8 mod 17 &equiv; 1</code>
 
 Now they both know the password, but Eve cannot determine it, because she does not know Alice's `6` or Bob's `8`
 
