@@ -81,8 +81,8 @@ Math.pow(2,53) + 4
 17 and 7 are prime numbers. One of these will be our prime modulus.
 The primitive root of a number is one that has no factors in common where, if you raise the root by any exponent, the modulus will return a different value, until the sequence repeats itself.
 
-primitive <br > root | exponent | value | mod 17 | mod 7
----- |: ---- :| ---- :| ---- :| ----:
+primitive <br >root | exponent | value | mod 17 | mod 7
+----|:----:| ----:|----:|----:
 3 | 1 | 3 | **3** | **3**
 3 | 2 | 9 | 9 | 2
 3 | 3 | 27 | 10 | 6
