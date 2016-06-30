@@ -123,6 +123,7 @@ Bob sends his request inside the locked box, with public key written on a Post-I
 Alice will be able to unlock the box, put in the candy and then return it to Bob with her secret key (in this example, 32). Now the class has both public keys and the class can make several more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
 
 Whatever happens in class, unlock the box and share the candy.
+> "It's like a nerdy piñata!" -Wayne Banks, SF WDI 29
 
 #### Discussion:  How are these things related? (10 minutes)
 
