@@ -6,12 +6,14 @@
 * **Apply** this concept to server authentication
 * **Warm up** your brains, have fun (with MATH!) and eat candy
 
-### Warm-up:  The Russian Postal Problem (5-10 minutes)
+<!--10 minutes 1:00-->
+
+### Warm-up:  The Russian Postal Problem
 Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
 
 Form groups and try to solve the problem. (If you've seen this one already, you can give hints, but please don't give it away.)
 
-----
+<!----
 <details>
 <summary>Solution:</summary>
 
@@ -21,10 +23,14 @@ Form groups and try to solve the problem. (If you've seen this one already, you 
 * Natasha can unlock the box with her key.
 
 </details>
----- 
+---->
+
+<!-- 5 minutes 1:10 -->
 ### [Video: How does this relate to computer passwords?](http://www.wimp.com/how-encryption-works-in-your-web-browser/)
 
-_Note: This is an excellent video, with two gotchas. First, the narrator says "forty-two" when the display shows "46" several times. (46 is correct.) Second, there is a moment when `16^54 mod 17` is converted to `3^(24*54) mod 17` without explanation. This can be simplified and proven more easily using 3^6 and 3^8._
+<!--10 minutes 1:15 -->
+
+_Note: This is an excellent video, with two gotchas. First, the narrator says "forty-two" when the display shows "46" several times. (46 is correct.) Second, there is a moment when `16^54 mod 17` is converted to `3^(24*54) mod 17` without explanation. This can be simplified and proven more easily using 3^6 and 3^8.  Let's do that now..._
 
 Suppose Alice chose `6` as her random number. She would perform the equation: 
 <code>3^6 mod 17 &equiv; 15</code> and send 15 to Bob.
@@ -40,12 +46,13 @@ Now they both know the password, but Eve cannot determine it, because she does n
 
 The simplified math can be hacked in a reasonable amount of time, but if the secret key was (for example) a 40-digit hexidecimal value, it would take a long, long time.
 
+<!--10 minutes 1:25 -->
 
 #### Pairing Activity #1: Test the math
-_(This can be done while two volunteers prepare a simplified algorithm for Activity 2)_
+<!--(Whoever finishes first can prepare their simplified algorithm for Activity 2)-->
 
 * Developers begin with the simplified algorithm `3^n mod 7` as the "shared secret"
-* Each developer selects a random number `n` -- this is your "secret key" -- don't share it.
+* Each developer selects a random number `n`  -- this is your "secret key" -- don't share it.
 * Perform the calculation `3^n mod 7` and share only the remainder. This is your "public key"
 * Take your partner's public key and raise it to your secret key.
 * Did you get the same, new remainder?
@@ -54,7 +61,7 @@ _(This can be done while two volunteers prepare a simplified algorithm for Activ
 -----
 <details>
 <summary>Refer to the table below to get the math. You may also run math in your browser, but remember Javascript numbers are "double-precision 64-bit format IEEE 754 values"</summary>
-Of those 64 bits, you need a few to determine it's sign (positive or negative) and a few more in case we need to raise to an exponent. We can prove this by running in the Chrome console:
+Of those 64 bits, you need a few to determine its sign (positive or negative) and a few more in case we need to raise to an exponent. We can prove this by running in the Chrome console:
 
 ```
 Math.pow(2, 53)
@@ -102,35 +109,46 @@ primitive <br >root | exponent | value | mod 17 | mod 7
 3 | 18 | 387,420,489 | 9 | 1
 3 | 19 | 1,162,261,467 | 10 | **3**
 
-This can also be illustrated with a clock:
+<!--1:35 5 minutes -->
+
+Modular math can also be illustrated with a clock:
 
 ![](mod17.png)
 
-For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) You can easily see how <code>3^3 mod 17 &equiv; 10</code>
+For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) Now we can see how <code>3^3 mod 17 &equiv; 10</code>
 
-#### Activity 2: Candy from a Lockbox (20 minutes)
+<!--1:40 20 minutes -->
+
+#### Activity 2: Candy from a Lockbox
 
 _NOTE: The following exercise description DOES NOT reveal the real combinations of the locks. Make sure you know the combinations before you begin._
 
-In our version of the story, Alice (played by a student) has a bunch of candy. Bob (played by a different student) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination. Alice has another lock with a given combination. (Alice does not know Bob's combo, and vice-versa.)
+In our version of the story, Alice (a developer) has a bunch of candy. Bob (another developer) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination. Alice has another lock with her own combination. (Alice does not know Bob's combo, and vice-versa.)
 
-Before the exercise begins, developers playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations, such as <code>5 * n mod 12 &equiv; 0 </code>. If the multiplier is 16, Bob will send a public key of 15 and Alice will know that Bob's combo is 15 * 16, or 240.
+Before the exercise begins, developers playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations.  For example, they can use <code>7 * n mod 100</code>. If Bob's `n` is 16, Bob will send a public key of 12.  If Alice's `n` is 42, she will send a public key of 94. Alice or Bob can then multiply these together to get the multiplier for their combinations.
 
-This is an incredibly simple algorithm, but that's what makes it fun as an in-class activity. _(If the algorithm is more complex, it will be exponentially more difficult for the class to unlock the box, which makes the exercise kind of pointless.)_
+> Challenge: What is Alice and Bob's shared key / multiplier?
 
-Bob sends his request inside the locked box, with public key written on a Post-It on the outside. Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess different combinations, as many times as the instructor allows. (You might limit it to 3 - 10 attempts, or let the students self-regulate.) Before they begin, you can identify a few points to get them on the right track. (For example, this is a 3-digit combo, so don't do math with very large numbers, negative numbers or decimals.)
+Now let's ship some candy!
 
-Alice will be able to unlock the box, put in the candy and then return it to Bob with her secret key (in this example, 32). Now the class has both public keys and the class can make several more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
+Bob sends his request (candy, please!) inside the locked box, with his public key written on a Post-It on the outside. This will be multiplied by the shared key that only Alice and Bob know.  Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess one combination per person. Before we begin, let's discuss a few points to get on the right track. 
 
-Whatever happens in class, unlock the box and share the candy.
-> "It's like a nerdy piñata!" -Wayne Banks, SF WDI 29
+<!--For example, this is a 3-digit combo, so don't do math with very large numbers, negative numbers or decimals.-->
 
-#### Discussion:  How are these things related? (10 minutes)
+Alice will be able to unlock the box, put in the candy and then return it to Bob with her public key.  Unfortunately, now there will be two locks!  Now the class has both public keys and everyone in the class can make two more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
 
-* Did the class figure it out? Did they get close?
+If anyone can crack the combination, they get to decide how to share the candy.  If no one does, Bob and Alice get to decide.
+
+> "It's like a nerdy piñata!" -Wayne Banks, Former WDI Student
+
+<!-- 2:00 10 minutes -->
+
+#### Discussion:  How are these things related?
+
+* Did we figure out the combination? Any lessons on making this easier/harder?
 * How would we change the math to make this more realistic?
 * What is modular math and how does it work?
-* How does bcrypt use modular math?
+* [How does bcrypt use modular math?](https://en.wikipedia.org/wiki/Blowfish_(cipher))
 
 
 #### More Math (time permitting)
