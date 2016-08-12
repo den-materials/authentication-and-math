@@ -1,5 +1,7 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> An Intro to Auth and Modular Arithmetic
 
+<!--Hook: Raise your hand if you fully understood our authentication class two weeks ago.  Raise your hand if you realized that was two weeks ago.  Today, we're going to try a more fun approach to this, to try and put things in more real terms. -->
+
 ### Objectives:
 
 * **Understand** the basic math concepts behind modular arithmetic
