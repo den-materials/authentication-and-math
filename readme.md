@@ -125,7 +125,7 @@ _NOTE: The following exercise description DOES NOT reveal the real combinations 
 
 In our version of the story, Alice (a developer) has a bunch of candy. Bob (another developer) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination. Alice has another lock with her own combination. (Alice does not know Bob's combo, and vice-versa.)
 
-Before the exercise begins, developers playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations.  For example, they can use <code>7 * n mod 100</code>. If Bob's `n` is 16, Bob will send a public key of 12.  If Alice's `n` is 42, she will send a public key of 94. Alice or Bob can then multiply these together to get the multiplier for their combinations.
+Before the exercise begins, developers playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations.  For example, they can use <code>7 * n mod 100</code>. If Bob's `n` is 16, Bob will send a public key of 12.  If Alice's `n` is 42, she will send a public key of 94. Alice or Bob can then multiply these together to get a multiplier, or shared key, for their combinations.
 
 > Challenge: What is Alice and Bob's shared key / multiplier?
 
