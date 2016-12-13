@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> An Intro to Auth and Modular Arithmetic
 
-<!--Hook: Raise your hand if you fully understood our authentication class two weeks ago.  Raise your hand if you realized that was two weeks ago.  Today, we're going to try a more fun approach to this, to try and put things in more real terms. -->
+<!--Hook: Raise your hand if you fully understood our authentication class a week ago.  Raise your hand if you realized that was a week ago.  Today, we're going to try a more fun approach to this, to try and put things in more real terms. -->
 
 ### Objectives:
 
@@ -8,7 +8,7 @@
 * **Apply** this concept to server authentication
 * **Warm up** your brains, have fun (with MATH!) and eat candy
 
-<!--10 minutes 1:00-->
+<!--10 minutes 11:00-->
 
 ### Warm-up:  The Russian Postal Problem
 Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
@@ -27,10 +27,20 @@ Form groups and try to solve the problem. (If you've seen this one already, you 
 </details>
 ---->
 
-<!-- 5 minutes 1:10 -->
+<!--15 minutes 11:10-->
+
+### An Introduction to Modular Arithmetic
+
+Remember remainders from division?  That's what modular arithmetic is all about.  In mathematics, modular arithmetic is a system of arithmetic for integers, where numbers "wrap around" upon reaching a certain value—the modulus (plural moduli).
+
+Let's see what that looks like on the white board...
+
+<!--Main points: Start by dividing a big number like 1230 by 10, then 1233...where does the remainder go?  Now let's try a number like 7.  What hat about binary?  What happens when we multiply two semi-big numbers by each other?  18*30 mod 17, for instance....  Notice that we can just take the remainders off the top and multiply them together.  That's because the rest is all 0 mod 17...and 0*anything = 0. -->
+
+<!-- 5 minutes 11:25 -->
 ### [Video: How does this relate to computer passwords?](http://www.wimp.com/how-encryption-works-in-your-web-browser/)
 
-<!--10 minutes 1:15 -->
+<!--10 minutes 11:30 -->
 
 _Note: This is an excellent video, with two gotchas. First, the narrator says "forty-two" when the display shows "46" several times. (46 is correct.) Second, there is a moment when `16^54 mod 17` is converted to `3^(24*54) mod 17` without explanation. This can be simplified and proven more easily using 3^6 and 3^8.  Let's do that now..._
 
@@ -48,7 +58,7 @@ Now they both know the password, but Eve cannot determine it, because she does n
 
 The simplified math can be hacked in a reasonable amount of time, but if the secret key was (for example) a 40-digit hexidecimal value, it would take a long, long time.
 
-<!--10 minutes 1:25 -->
+<!--10 minutes 11:40 -->
 
 #### Pairing Activity #1: Test the math
 <!--(Whoever finishes first can prepare their simplified algorithm for Activity 2)-->
@@ -111,7 +121,7 @@ primitive <br >root | exponent | value | mod 17 | mod 7
 3 | 18 | 387,420,489 | 9 | 1
 3 | 19 | 1,162,261,467 | 10 | **3**
 
-<!--1:35 5 minutes -->
+<!--11:50 5 minutes -->
 
 Modular math can also be illustrated with a clock:
 
@@ -119,7 +129,7 @@ Modular math can also be illustrated with a clock:
 
 For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) Now we can see how <code>3^3 mod 17 &equiv; 10</code>
 
-<!--1:40 20 minutes -->
+<!--11:55 25 minutes -->
 
 #### Activity 2: Candy from a Lockbox
 
@@ -143,7 +153,7 @@ If anyone can crack the combination, they get to decide how to share the candy. 
 
 > "It's like a nerdy piñata!" -Wayne Banks, Former WDI Student
 
-<!-- 2:00 10 minutes -->
+<!-- 12:20 10 minutes -->
 
 #### Discussion:  How are these things related?
 
@@ -154,7 +164,9 @@ If anyone can crack the combination, they get to decide how to share the candy. 
 
 
 #### More Math (time permitting)
-[Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
+- [Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
+- [Modular arithmetic description](https://en.wikipedia.org/wiki/Modular_arithmetic)
+
 
 
 ## Licensing
