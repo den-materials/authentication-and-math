@@ -31,6 +31,8 @@ Form groups and try to solve the problem. (If you've seen this one already, you 
 
 ### An Introduction to Modular Arithmetic
 
+![](remainders.gif)
+
 Remember remainders from division?  That's what modular arithmetic is all about.  In mathematics, modular arithmetic is a system of arithmetic for integers, where numbers "wrap around" upon reaching a certain value—the modulus (plural moduli).
 
 Let's see what that looks like on the white board...
