@@ -62,7 +62,7 @@ The simplified math can be hacked in a reasonable amount of time, but if the sec
 
 <!--10 minutes 11:40 -->
 
-#### Pairing Activity #1: Test the math
+#### Pairing Activity: Test the math
 <!--(Whoever finishes first can prepare their simplified algorithm for Activity 2)-->
 
 * Developers begin with the simplified algorithm `3^n mod 7` as the "shared secret"
@@ -73,26 +73,7 @@ The simplified math can be hacked in a reasonable amount of time, but if the sec
 
 
 -----
-<details>
-<summary>Refer to the table below to get the math. You may also run math in your browser, but remember Javascript numbers are "double-precision 64-bit format IEEE 754 values"</summary>
-Of those 64 bits, you need a few to determine its sign (positive or negative) and a few more in case we need to raise to an exponent. We can prove this by running in the Chrome console:
-
-```
-Math.pow(2, 53)
-=> 9007199254740992  // CORRECT.
-Math.pow(2, 53) + 1
-= > 9007199254740992  // INCORRECT! THEY SHOULD NOT BE THE SAME!
-Math.pow(2, 53) + 2
-= > 9007199254740994  // ADD 2 WORKS!?!?!?
-Math.pow(2,53) + 3
-= > 9007199254740996
-Math.pow(2,53) + 4
-= >  9007199254740996 // WHAT IS HAPPENING???
-
-```
-
-[More info Here](http://www.2ality.com/2012/07/large-integers.html)
-</details>
+Refer to the table below to get the math.
 -----
 
 
@@ -131,9 +112,11 @@ Modular math can also be illustrated with a clock:
 
 For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) Now we can see how <code>3^3 mod 17 &equiv; 10</code>
 
+<!--I would love to do this, but we have no time, and it's hard to do right -->
+
 <!--11:55 25 minutes -->
 
-#### Activity 2: Candy from a Lockbox
+<!--#### Activity 2: Candy from a Lockbox
 
 _NOTE: The following exercise description DOES NOT reveal the real combinations of the locks. Make sure you know the combinations before you begin._
 
@@ -145,11 +128,11 @@ Before the exercise begins, developers playing Bob and Alice must also agree upo
 
 Now let's ship some candy!
 
-Bob sends his request (candy, please!) inside the locked box, with his public key written on a Post-It on the outside. This will be multiplied by the shared key that only Alice and Bob know.  Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess one combination per person. Before we begin, let's discuss a few points to get on the right track. 
+Bob sends his request (candy, please!) inside the locked box, with his public key written on a Post-It on the outside. This will be multiplied by the shared key that only Alice and Bob know.  Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess one combination per person. Before we begin, let's discuss a few points to get on the right track. -->
 
 <!--For example, this is a 3-digit combo, so don't do math with very large numbers, negative numbers or decimals.-->
 
-Alice will be able to unlock the box, put in the candy and then return it to Bob with her public key.  Unfortunately, now there will be two locks!  Now the class has both public keys and everyone in the class can make two more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
+<!--Alice will be able to unlock the box, put in the candy and then return it to Bob with her public key.  Unfortunately, now there will be two locks!  Now the class has both public keys and everyone in the class can make two more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
 
 If anyone can crack the combination, they get to decide how to share the candy.  If no one does, Bob and Alice get to decide.
 
@@ -159,13 +142,13 @@ If anyone can crack the combination, they get to decide how to share the candy. 
 
 #### Discussion:  How are these things related?
 
-* Did we figure out the combination? Any lessons on making this easier/harder?
-* How would we change the math to make this more realistic?
+<!--* Did we figure out the combination? Any lessons on making this easier/harder?
+* How would we change the math to make this more realistic?-->
 * What is modular math and how does it work?
 * [How does bcrypt use modular math?](https://en.wikipedia.org/wiki/Blowfish_(cipher))
 
 
-#### More Math (time permitting)
+#### More Math (if you're interested)
 - [Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 - [Modular arithmetic description](https://en.wikipedia.org/wiki/Modular_arithmetic)
 
