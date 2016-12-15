@@ -6,7 +6,7 @@
 
 * **Understand** the basic math concepts behind modular arithmetic
 * **Apply** this concept to server authentication
-* **Warm up** your brains, have fun (with MATH!) and eat candy
+* **Warm up** your brains, have fun (with MATH!)
 
 <!--10 minutes 11:00-->
 
