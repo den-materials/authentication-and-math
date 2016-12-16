@@ -8,7 +8,7 @@
 * **Apply** this concept to server authentication
 * **Warm up** your brains, have fun (with MATH!)
 
-<!--10 minutes 11:00-->
+<!--10 minutes 10:40-->
 
 ### Warm-up:  The Russian Postal Problem
 Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
@@ -27,7 +27,7 @@ Form groups and try to solve the problem. (If you've seen this one already, you 
 </details>
 ---->
 
-<!--15 minutes 11:10-->
+<!--15 minutes 10:50-->
 
 ### An Introduction to Modular Arithmetic
 
@@ -37,12 +37,12 @@ Remember remainders from division?  That's what modular arithmetic is all about.
 
 Let's see what that looks like on the white board...
 
-<!--Main points: Start by dividing a big number like 1230 by 10, then 1233...where does the remainder go?  Now let's try a number like 7.  What hat about binary?  What happens when we multiply two semi-big numbers by each other?  18*30 mod 17, for instance....  Notice that we can just take the remainders off the top and multiply them together.  That's because the rest is all 0 mod 17...and 0*anything = 0. -->
+<!--Main points: Start by dividing a big number like 1230 by 10, then 1233...where does the remainder go?  Now let's try a number like 7.  What about binary?  What happens when we multiply two semi-big numbers by each other?  18*30 mod 17, for instance....  Notice that we can just take the remainders off the top and multiply them together.  That's because the rest is all 0 mod 17...and 0*anything = 0. -->
 
-<!-- 5 minutes 11:25 -->
+<!-- 5 minutes 11:05 -->
 ### [Video: How does this relate to computer passwords?](http://www.wimp.com/how-encryption-works-in-your-web-browser/)
 
-<!--10 minutes 11:30 -->
+<!--10 minutes 11:15 -->
 
 _Note: This is an excellent video, with two gotchas. First, the narrator says "forty-two" when the display shows "46" several times. (46 is correct.) Second, there is a moment when `16^54 mod 17` is converted to `3^(24*54) mod 17` without explanation. This can be simplified and proven more easily using 3^6 and 3^8.  Let's do that now..._
 
@@ -60,7 +60,7 @@ Now they both know the password, but Eve cannot determine it, because she does n
 
 The simplified math can be hacked in a reasonable amount of time, but if the secret key was (for example) a 40-digit hexidecimal value, it would take a long, long time.
 
-<!--10 minutes 11:40 -->
+<!--10 minutes 11:25 -->
 
 #### Pairing Activity: Test the math
 <!--(Whoever finishes first can prepare their simplified algorithm for Activity 2)-->
@@ -104,7 +104,7 @@ primitive <br >root | exponent | value | mod 17 | mod 7
 3 | 18 | 387,420,489 | 9 | 1
 3 | 19 | 1,162,261,467 | 10 | **3**
 
-<!--11:50 5 minutes -->
+<!--11:35 5 minutes -->
 
 Modular math can also be illustrated with a clock:
 
