@@ -8,7 +8,7 @@
 * **Apply** this concept to server authentication
 * **Warm up** your brains, have fun (with MATH!)
 
-<!--10 minutes 11:00-->
+<!--15 minutes 10:50-->
 
 ### Warm-up:  The Russian Postal Problem
 Today we're going to enact a metaphor for auth inspired by [The Russian Postal Problem](http://www.jwstelly.org/BrainTeaser/Problem.php?id=14)
@@ -27,9 +27,7 @@ Form groups and try to solve the problem. (If you've seen this one already, you 
 </details>
 ---->
 
-<!--11:20 -->
-
-<!--15 minutes 11:10-->
+<!--20 minutes 11:05-->
 
 ### An Introduction to Modular Arithmetic
 
@@ -41,12 +39,10 @@ Let's see what that looks like on the white board...
 
 <!--Main points: Start by dividing a big number like 1230 by 10, then 1233...where does the remainder go?  Now let's try a number like 7.  What about binary?  What happens when we multiply two semi-big numbers by each other?  18*30 mod 17, for instance....  Notice that we can just take the remainders off the top and multiply them together.  That's because the rest is all 0 mod 17...and 0*anything = 0. -->
 
-<!--Actually 11:34 -->
-
 <!-- 5 minutes 11:25 -->
 ### [Video: How does this relate to computer passwords?](http://www.wimp.com/how-encryption-works-in-your-web-browser/)
 
-<!--10 minutes 11:30 -->
+<!--15 minutes 11:30 -->
 
 _Note: This is an excellent video, with two gotchas. First, the narrator says "forty-two" when the display shows "46" several times. (46 is correct.) Second, there is a moment when `16^54 mod 17` is converted to `3^(24*54) mod 17` without explanation. This can be simplified and proven more easily using 3^6 and 3^8.  Let's do that now..._
 
@@ -66,12 +62,10 @@ The simplified math can be hacked in a reasonable amount of time, but if the sec
 
 <!--Really helps to put up a chart with Alice, Eve, and Bob, and what numbers they can all see -->
 
-<!--Actually 12:05 these explanations are tough, take a lot of time-->
-
-<!--10 minutes 11:40 -->
+<!--15 minutes 11:45 -->
 
 #### Pairing Activity: Test the math
-<!--(Whoever finishes first can prepare their simplified algorithm for Activity 2)-->
+<!--We should model this out with one student and an instructor picking a number each, everything transparent-->
 
 * Developers begin with the simplified algorithm `3^n mod 7` as the "shared secret"
 * Each developer selects a random number `n`  -- this is your "secret key" -- don't share it.
@@ -79,11 +73,11 @@ The simplified math can be hacked in a reasonable amount of time, but if the sec
 * Take your partner's public key and raise it to your secret key.
 * Did you get the same, new remainder?
 
+<!--If time, do it again with new numbers -->
 
 -----
 Refer to the table below to get the math.
 -----
-
 
 #### `3^n mod 17` vs `3^n mod 7` Reference Table
 
@@ -112,7 +106,7 @@ primitive <br >root | exponent | value | mod 17 | mod 7
 3 | 18 | 387,420,489 | 9 | 1
 3 | 19 | 1,162,261,467 | 10 | **3**
 
-<!--11:50 5 minutes -->
+<!--12:00 5 minutes -->
 
 Modular math can also be illustrated with a clock:
 
@@ -120,47 +114,16 @@ Modular math can also be illustrated with a clock:
 
 For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) Now we can see how <code>3^3 mod 17 &equiv; 10</code>
 
-<!--I would love to do this, but we have no time, and it's hard to do right -->
-
-<!--11:55 25 minutes -->
-
-<!--#### Activity 2: Candy from a Lockbox
-
-_NOTE: The following exercise description DOES NOT reveal the real combinations of the locks. Make sure you know the combinations before you begin._
-
-In our version of the story, Alice (a developer) has a bunch of candy. Bob (another developer) wants Alice to send him some candy without sharing with the rest of the class. Bob has a lock box and a combination lock with a given combination. Alice has another lock with her own combination. (Alice does not know Bob's combo, and vice-versa.)
-
-Before the exercise begins, developers playing Bob and Alice must also agree upon a shared secret--a simple mathematical formula or algorithm to decrypt each others' combinations.  For example, they can use <code>7 * n mod 100</code>. If Bob's `n` is 16, Bob will send a public key of 12.  If Alice's `n` is 42, she will send a public key of 94. Alice or Bob can then multiply these together to get a multiplier, or shared key, for their combinations.
-
-> Challenge: What is Alice and Bob's shared key / multiplier?
-
-Now let's ship some candy!
-
-Bob sends his request (candy, please!) inside the locked box, with his public key written on a Post-It on the outside. This will be multiplied by the shared key that only Alice and Bob know.  Bob must pass the box around the class before it gets to Alice. The class can hypothesize and guess one combination per person. Before we begin, let's discuss a few points to get on the right track. -->
-
-<!--For example, this is a 3-digit combo, so don't do math with very large numbers, negative numbers or decimals.-->
-
-<!--Alice will be able to unlock the box, put in the candy and then return it to Bob with her public key.  Unfortunately, now there will be two locks!  Now the class has both public keys and everyone in the class can make two more attempts at figuring out the combinations. If it makes it back to Bob, he will be able to unlock both locks.
-
-If anyone can crack the combination, they get to decide how to share the candy.  If no one does, Bob and Alice get to decide.
-
-> "It's like a nerdy piñata!" -Wayne Banks, Former WDI Student
-
-<!-- 12:20 10 minutes -->
+<!-- 12:05 10 minutes -->
 
 #### Discussion:  How are these things related?
 
-<!--* Did we figure out the combination? Any lessons on making this easier/harder?
-* How would we change the math to make this more realistic?-->
 * What is modular math and how does it work?
 * [How does bcrypt use modular math?](https://en.wikipedia.org/wiki/Blowfish_(cipher))
-
 
 #### More Math (if you're interested)
 - [Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 - [Modular arithmetic description](https://en.wikipedia.org/wiki/Modular_arithmetic)
-
-
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
