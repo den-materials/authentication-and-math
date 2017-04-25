@@ -8,6 +8,7 @@
 * **Apply** this concept to server authentication
 * **Warm up** your brains, have fun (with MATH!)
 
+<!--11:01 WDI3 -->
 <!--15 minutes 10:50-->
 
 ### Warm-up:  The Russian Postal Problem
@@ -27,6 +28,7 @@ Form groups and try to solve the problem. (If you've seen this one already, you 
 </details>
 ---->
 
+<!--11:18 WDI3 -->
 <!--20 minutes 11:05-->
 
 ### An Introduction to Modular Arithmetic
@@ -39,9 +41,11 @@ Let's see what that looks like on the white board...
 
 <!--Main points: Start by dividing a big number like 1230 by 10, then 1233...where does the remainder go?  Now let's try a number like 7.  What about binary?  What happens when we multiply two semi-big numbers by each other?  18*30 mod 17, for instance....  Notice that we can just take the remainders off the top and multiply them together.  That's because the rest is all 0 mod 17...and 0*anything = 0. -->
 
+<!--11:35 WDI3 -->
 <!-- 5 minutes 11:25 -->
 ### [Video: How does this relate to computer passwords?](http://www.wimp.com/how-encryption-works-in-your-web-browser/)
 
+<!--11:41 WDI3 -->
 <!--15 minutes 11:30 -->
 
 _Note: This is an excellent video, with two gotchas. First, the narrator says "forty-two" when the display shows "46" several times. (46 is correct.) Second, there is a moment when `16^54 mod 17` is converted to `3^(24*54) mod 17` without explanation. This can be simplified and proven more easily using 3^6 and 3^8.  Let's do that now..._
@@ -62,6 +66,7 @@ The simplified math can be hacked in a reasonable amount of time, but if the sec
 
 <!--Really helps to put up a chart with Alice, Eve, and Bob, and what numbers they can all see -->
 
+<!--WDI3 11:55 -->
 <!--15 minutes 11:45 -->
 
 #### Pairing Activity: Test the math
@@ -124,6 +129,8 @@ For positive numbers, move clockwise. (For negative numbers, move counter-clockw
 #### More Math (if you're interested)
 - [Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 - [Modular arithmetic description](https://en.wikipedia.org/wiki/Modular_arithmetic)
+
+<!-- 12: 24 WDI3 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
