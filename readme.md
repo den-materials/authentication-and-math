@@ -129,6 +129,11 @@ For positive numbers, move clockwise. (For negative numbers, move counter-clockw
 * What is modular math and how does it work?
 * [How does bcrypt use modular math?](https://en.wikipedia.org/wiki/Blowfish_(cipher))
 
+#### A more graphical representation
+
+- [Public and Private Keys](https://www.comodo.com/resources/small-business/digital-certificates2.php)
+- [Public Key Encryption](https://medium.com/@vrypan/explaining-public-key-cryptography-to-non-geeks-f0994b3c2d5)
+
 #### More Math (if you're interested)
 - [Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 - [Modular arithmetic description](https://en.wikipedia.org/wiki/Modular_arithmetic)
