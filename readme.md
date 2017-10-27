@@ -8,6 +8,7 @@
 * **Apply** this concept to server authentication
 * **Warm up** your brains, have fun (with MATH!)
 
+<!--WDI5 11:09 -->
 <!--10:58 WDI4 -->
 <!--11:01 WDI3 -->
 <!--15 minutes 10:50-->
@@ -43,6 +44,7 @@ Let's see what that looks like on the white board...
 <!--Main points: Start by dividing a big number like 1230 by 10, then 1233...where does the remainder go?  Now let's try a number like 7.  What about binary?  What happens when we multiply two semi-big numbers by each other?  18*30 mod 17, for instance....  Notice that we can just take the remainders off the top and multiply them together.  That's because the rest is all 0 mod 17...and 0*anything = 0. -->
 
 <!--11:35 WDI3 -->
+<!--11:30 WDI5 -->
 <!--11:22 WDI4 2 minute stretch break so start again at 11:25 -->
 <!-- 5 minutes 11:25 -->
 ### [Video: How does this relate to computer passwords?](http://www.wimp.com/how-encryption-works-in-your-web-browser/)
@@ -68,6 +70,7 @@ The simplified math can be hacked in a reasonable amount of time, but if the sec
 
 <!--Really helps to put up a chart with Alice, Eve, and Bob, and what numbers they can all see -->
 
+<!--WDI5 11:58 -->
 <!--WDI3 11:55 -->
 <!--WDI4 11:48 -->
 <!--15 minutes 11:45 -->
@@ -138,6 +141,7 @@ For positive numbers, move clockwise. (For negative numbers, move counter-clockw
 - [Here is a good explanation of modular math](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic)
 - [Modular arithmetic description](https://en.wikipedia.org/wiki/Modular_arithmetic)
 
+<!--WDI5 12:16 -->
 <!--12:08 WDI4 -->
 <!-- 12: 24 WDI3 -->
 
