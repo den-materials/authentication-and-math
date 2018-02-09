@@ -1,6 +1,6 @@
 # <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> An Intro to Auth and Modular Arithmetic
 
-<!--Hook: Raise your hand if you fully understood our authentication class a week ago.  Raise your hand if you realized that was a week ago.  Today, we're going to try a more fun approach to this, to try and put things in more real terms. -->
+<!--Hook: Raise your hand if you fully understood our authentication class five weeks ago.  Raise your hand if you realized that was five weeks ago.  Today, we're going to try a more fun approach to this, to try and put things in more real terms. -->
 
 ### Objectives:
 
@@ -70,12 +70,22 @@ The simplified math can be hacked in a reasonable amount of time, but if the sec
 
 <!--Really helps to put up a chart with Alice, Eve, and Bob, and what numbers they can all see -->
 
+### "Clock Arithmetic"
+
+<!--11:45 5 minutes -->
+
+Modular math can also be illustrated with a clock:
+
+![](mod17.png)
+
+For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) Now we can see how <code>3^3 mod 17 &equiv; 10</code>
+
 <!--WDI5 11:58 -->
 <!--WDI3 11:55 -->
 <!--WDI4 11:48 -->
 <!--15 minutes 11:45 -->
 
-#### Pairing Activity: Test the math
+### Pairing Activity: Test the math
 <!--We should model this out with one student and an instructor picking a number each, everything transparent-->
 
 * Developers begin with the simplified algorithm `3^n mod 7` as the "shared secret"
@@ -116,14 +126,6 @@ primitive <br >root | exponent | value | mod 17 | mod 7
 3 | 17 | 129,140,163 | **3** | 5
 3 | 18 | 387,420,489 | 9 | 1
 3 | 19 | 1,162,261,467 | 10 | **3**
-
-<!--12:00 5 minutes -->
-
-Modular math can also be illustrated with a clock:
-
-![](mod17.png)
-
-For positive numbers, move clockwise. (For negative numbers, move counter-clockwise.) Now we can see how <code>3^3 mod 17 &equiv; 10</code>
 
 <!-- 12:05 10 minutes -->
 
