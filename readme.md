@@ -8,6 +8,7 @@
 * **Apply** this concept to server authentication
 * **Warm up** your brains, have fun (with MATH!)
 
+<!--WDI6 9:40  -->
 <!--WDI5 11:09 -->
 <!--10:58 WDI4 -->
 <!--11:01 WDI3 -->
@@ -30,6 +31,7 @@ Form groups and try to solve the problem. (If you've seen this one already, you 
 </details>
 ---->
 
+<!--10:04 WDI6 finishing video, then doing math -->
 <!--11:18 WDI3 -->
 <!--20 minutes 11:05-->
 
@@ -146,6 +148,7 @@ primitive <br >root | exponent | value | mod 17 | mod 7
 <!--WDI5 12:16 -->
 <!--12:08 WDI4 -->
 <!-- 12: 24 WDI3 -->
+<!--WDI6 10:54 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
